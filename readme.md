@@ -4,7 +4,7 @@ This script finds new games comparing the previous execution with the new one.
 
 All the data is requested from the API: <https://www.gamerpower.com/api/giveaways>
 
-The included scripts *Set-ScheduledTask.ps1* and *Unset-ScheduledTask.ps1* allow to set or remove its execution from PC start-up.
+The included scripts *Set-ScheduledTask.ps1* and *Unset-ScheduledTask.ps1* allow to set or remove its execution from User start-up.
 
 After any execution of the *Get-NewFreeGames* script, two .csv files will be generated inside the powershell_scripts folder.
 
@@ -16,7 +16,7 @@ First, create a folder somewhere and put every single file inside (don't ever mo
 
 After that, just doble click any of the .bat files and accept the emerging window to execute powershell as admin (needed to set and unset the task on the scheduler).
 
-There is a file called *Set-ScheduledTask.ps1* inside the *powershell_scripts* folder. The value on this line can be changed to delay the script execution on PC start-up:
+There is a file called *Set-ScheduledTask.ps1* inside the *powershell_scripts* folder. The value on this line can be changed to delay the script execution on User start-up:
 
 ```powershell
     $executionDelayFromStartUp = 10 # in seconds
